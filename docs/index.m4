@@ -9,7 +9,7 @@
  <body style='width: 90%; margin: auto; font-family: sans-serif;'>
 
   <h1><a target='_top' href='https://www.bris.ac.uk/unit-programme-catalogue/UnitDetails.jsa?unitCode=COMS10015&ayrCode=24/25'>COMS10015: Computer Architecture</a>
-      (<a target='_top' href='https://www.phoo.org/COMS10015'>non-Blackboard access</a> via <a href='https://github.com/danpage/COMS10015/tree/COMS10015_2024'>GitHub</a> repo.)
+      (<a target='_top' href='https://cs-uob.github.io/COMS10015'>non-Blackboard access</a> via <a href='https://github.com/cs-uob/COMS10015/tree/COMS10015_2024'>GitHub</a> repo.)
  </h1>
 
   <!-- ===================================================================== -->
