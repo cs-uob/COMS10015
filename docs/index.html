@@ -1,0 +1,885 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN' 'https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
+
+<html xmlns='https://www.w3.org/1999/xhtml' lang='en-gb' xml:lang='en-gb'>
+
+ <head>
+  <link rel='stylesheet' type='text/css' href='index.css'>
+</head>
+
+ <body style='width: 90%; margin: auto; font-family: sans-serif;'>
+
+  <h1><a target='_top' href='https://www.bris.ac.uk/unit-programme-catalogue/UnitDetails.jsa?unitCode=COMS10015&ayrCode=24/25'>COMS10015: Computer Architecture</a>
+      (<a target='_top' href='https://www.phoo.org/COMS10015'>non-Blackboard access</a> via <a href='https://github.com/danpage/COMS10015/tree/COMS10015_2024'>GitHub</a> repo.)
+ </h1>
+
+  <!-- ===================================================================== -->
+
+ <hr/>
+
+  <h2 id='contents'>Contents</h2>
+  <p>
+  <ul><li><a href='#staff'       >Unit staff</a>
+     </li>
+      <li><a href='#material-TB1'>Unit material: TB-1</a>
+     </li>
+      <li><a href='#material-TB2'>Unit material: TB-2</a>
+     </li>
+      <li><a href='#vm'          >Unit VM</a>
+     </li>
+ </ul>
+ </p>
+
+ <hr/>
+
+  <!-- ===================================================================== -->
+
+  <h2 id='staff'>Unit staff</h2>
+  <p>
+    <!-- ===================================================================== -->
+
+  <center>
+  <table class='staff'    width='100%'>
+ 
+  <!-- ..................................................................... -->
+
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1' width='50%'><b>Name      </b></td>
+    <td class='blank' rowspan=' 1' colspan=' 1' width='50%'><b>Role      </b></td>
+  </tr>
+
+   <tr class='gap'/>
+
+  <!-- ..................................................................... -->
+ 
+   <tr>
+    <td class='lec-1'>Dr. Daniel Page
+   </td>
+    <td class='lec-1'>Lecturer
+   </td>
+  </tr>
+   <tr>
+    <td class='lec-2'>Dr. Tom Deakin
+   </td>
+    <td class='lec-2'>Lecturer and Unit Director
+   </td>
+  </tr>
+
+   <tr class='gap'/>
+
+  <!-- ..................................................................... -->
+
+ </table>
+ </center>
+
+  <!-- ===================================================================== -->
+
+ </p>
+
+ <hr/>
+
+  <!-- ===================================================================== -->
+
+  <h2 id='material-TB1'>Unit material: TB-1</h2>
+  <p>
+    <!-- ===================================================================== -->
+
+  <center>
+  <table class='material' width='100%'>
+
+  <!-- ..................................................................... -->
+
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1' width='10%'><b>Week      </b></td>
+    <td class='blank' rowspan=' 1' colspan=' 1' width='15%'><b>Type      </b></td>
+    <td class='blank' rowspan=' 1' colspan=' 1' width='15%'><b>Date      </b></td>
+    <td class='blank' rowspan=' 1' colspan=' 1' width='40%'><b>Content   </b></td>
+    <td class='blank' rowspan=' 1' colspan=' 1' width='20%'><b>Assessment</b></td>
+  </tr>
+
+   <tr class='gap'/>
+
+  <!-- ..................................................................... -->
+  <!-- shared  -->
+
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'> 1 to 12
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>
+   </td>
+    <td class='lec-1' rowspan=' 1' colspan=' 1'>[ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/sheet/misc-organise.pdf'>organisation</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/sheet/misc-notation.pdf'>notation</a>
+                                                | revision
+                                                  <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/sheet/misc-revision_q.pdf'>questions</a> 
+                                                  and
+                                                  <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/sheet/misc-revision_s.pdf'>solutions</a>
+                                                ]
+   </td>
+    <td class='gap'   rowspan=' 1' colspan=' 1'>
+   </td>
+  </tr>
+
+   <tr class='gap'/>
+
+  <!-- ..................................................................... -->
+  <!-- week  1 -->
+
+   <tr>
+    <td class='blank' rowspan=' 5' colspan=' 1'> 1
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lecture             slot <br/>  (synchronous)
+   </td>   
+    <td class='blank' rowspan=' 1' colspan=' 1'>22/01/24 <br/> QB-1.68
+   </td>
+    <td class='lec-1' rowspan=' 1' colspan=' 1'>Unit and TB1 intro.
+                                                <br/> 
+                                                [ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-01-1_s.pdf'>slides</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-01-1_n.pdf'>notes</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lecture             slot <br/>  (synchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>22/01/24 <br/> QB-1.68
+   </td>   
+    <td class='lec-1' rowspan=' 1' colspan=' 1'>Boolean algebra
+                                                <br/> 
+                                                [ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-01-2_s.pdf'>slides</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-01-2_n.pdf'>notes</a>
+                                                | <a target='_top' href='https://assets.phoo.org/book/pica/chap-prelims.pdf'>extended notes</a>
+                                                ]
+                                                &nbsp;
+                                                [ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/misc-quickref_bool.pdf'>handout</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lecture             slot <br/>  (synchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>22/01/24 <br/> QB-1.68
+   </td>   
+    <td class='lec-1' rowspan=' 1' colspan=' 1'>Boolean algebra
+                                                <br/> 
+                                                [ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-01-3_s.pdf'>slides</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-01-3_n.pdf'>notes</a>
+                                                | <a target='_top' href='https://assets.phoo.org/book/pica/chap-prelims.pdf'>extended notes</a>
+                                                ]
+                                                &nbsp;
+                                                [ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/misc-quickref_bool.pdf'>handout</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lab.                slot <br/>  (synchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>23/01/24 <br/> MVB-2.11
+   </td>
+    <td class='lab'   rowspan=' 1' colspan=' 1'>[ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/sheet/lab-01_q.pdf'>question</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/sheet/lab-01_s.pdf'>solution</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Additional resources
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'><ul><li><a target='_top' href='https://en.wikipedia.org/wiki/Boolean_algebra'>Wikipedia: Boolean algebra</a>
+                                                   </li>
+                                               </ul>
+  </tr>
+
+   <tr class='gap'/>
+
+  <!-- ..................................................................... -->
+  <!-- week  2 -->
+
+   <tr>
+    <td class='blank' rowspan=' 5' colspan=' 1'> 2
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lecture             slot <br/>  (synchronous)
+   </td>   
+    <td class='blank' rowspan=' 1' colspan=' 1'>22/01/24 <br/> QB-1.68
+   </td>
+    <td class='lec-1' rowspan=' 1' colspan=' 1'>Integer representation
+                                                <br/> 
+                                                [ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-02-1_s.pdf'>slides</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-02-1_n.pdf'>notes</a>
+                                                | <a target='_top' href='https://assets.phoo.org/book/pica/chap-prelims.pdf'>extended notes</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lecture             slot <br/>  (synchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>22/01/24 <br/> QB-1.68
+   </td>   
+    <td class='lec-1' rowspan=' 1' colspan=' 1'>Integer arithmetic
+                                                <br/> 
+                                                [ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-02-2_s.pdf'>slides</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-02-2_n.pdf'>notes</a>
+                                                | <a target='_top' href='https://assets.phoo.org/book/pica/chap-arith.pdf'>extended notes</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lecture             slot <br/>  (synchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>22/01/24 <br/> QB-1.68
+   </td>   
+    <td class='lec-1' rowspan=' 1' colspan=' 1'>Transistors and logic gates
+                                                <br/> 
+                                                [ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-02-3_s.pdf'>slides</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-02-3_n.pdf'>notes</a>
+                                                | <a target='_top' href='https://assets.phoo.org/book/pica/chap-logic.pdf'>extended notes</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lab.                slot <br/>  (synchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>23/01/24 <br/> MVB-2.11
+   </td>
+    <td class='lab'   rowspan=' 1' colspan=' 1'>[ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/sheet/lab-02_q.pdf'>question</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/sheet/lab-02_s.pdf'>solution</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Additional resources
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'><ul><li><a target='_top' href='https://en.wikipedia.org/wiki/Integer_(computer_science)'>Wikipedia: Integer</a>
+                                                   </li>
+                                                    <li><a target='_top' href='https://en.wikipedia.org/wiki/Signed_number_representations'>Wikipedia: Signed number representations</a>
+                                                   </li>
+                                                    <li><a target='_top' href='https://en.wikipedia.org/wiki/Bitwise_operation'>Wikipedia: Bit-wise operation</a>
+                                                   </li>
+                                                    <li><a target='_top' href='https://en.wikipedia.org/wiki/Adder_(electronics)'>Wikipedia: Adder</a>
+                                                   </li>
+                                                    <li><a target='_top' href='https://en.wikipedia.org/wiki/MOSFET'>Wikipedia: MOSTFET</a>
+                                                   </li>
+                                                    <li><a target='_top' href='https://en.wikipedia.org/wiki/Logic_gate'>Wikipedia: Logic gate</a>
+                                                   </li>
+                                                   </li>
+                                               </ul>
+  </tr>
+
+   <tr class='gap'/>
+
+  <!-- ..................................................................... -->
+  <!-- week  3 -->
+
+   <tr>
+    <td class='blank' rowspan=' 5' colspan=' 1'> 3
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lecture             slot <br/>  (synchronous)
+   </td>   
+    <td class='blank' rowspan=' 1' colspan=' 1'>22/01/24 <br/> QB-1.68
+   </td>
+    <td class='lec-1' rowspan=' 1' colspan=' 1'>Transistors and logic gates
+                                                <br/> 
+                                                [ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-03-1_s.pdf'>slides</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-03-1_n.pdf'>notes</a>
+                                                | <a target='_top' href='https://assets.phoo.org/book/pica/chap-logic.pdf'>extended notes</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lecture             slot <br/>  (synchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>22/01/24 <br/> QB-1.68
+   </td>   
+    <td class='lec-1' rowspan=' 1' colspan=' 1'>Combinatorial logic
+                                                <br/> 
+                                                [ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-03-2_s.pdf'>slides</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-03-2_n.pdf'>notes</a>
+                                                | <a target='_top' href='https://assets.phoo.org/book/pica/chap-logic.pdf'>extended notes</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lecture             slot <br/>  (synchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>22/01/24 <br/> QB-1.68
+   </td>   
+    <td class='lec-1' rowspan=' 1' colspan=' 1'>Combinatorial logic
+                                                <br/> 
+                                                [ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-03-3_s.pdf'>slides</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-03-3_n.pdf'>notes</a>
+                                                | <a target='_top' href='https://assets.phoo.org/book/pica/chap-logic.pdf'>extended notes</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lab.                slot <br/>  (synchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>23/01/24 <br/> MVB-2.11
+   </td>
+    <td class='lab'   rowspan=' 1' colspan=' 1'>[ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/sheet/lab-03_q.pdf'>question</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/sheet/lab-03_s.pdf'>solution</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Additional resources
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'><ul><li><a target='_top' href='https://en.wikipedia.org/wiki/MOSFET'>Wikipedia: MOSTFET</a>
+                                                   </li>
+                                                    <li><a target='_top' href='https://en.wikipedia.org/wiki/Logic_gate'>Wikipedia: Logic gate</a>
+                                                   </li>
+                                                    <li><a target='_top' href='https://en.wikipedia.org/wiki/Combinational_logic'>Wikipedia: Combinational logic</a>
+                                                   </li>
+                                                    <li><a target='_top' href='https://en.wikipedia.org/wiki/Karnaugh_map'>Wikipedia: Karnaugh map</a>
+                                                   </li>
+                                               </ul>
+  </tr>
+
+   <tr class='gap'/>
+
+  <!-- ..................................................................... -->
+  <!-- week  4 -->
+
+   <tr>
+    <td class='blank' rowspan=' 5' colspan=' 1'> 4
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lecture             slot <br/>  (synchronous)
+   </td>   
+    <td class='blank' rowspan=' 1' colspan=' 1'>22/01/24 <br/> QB-1.68
+   </td>
+    <td class='lec-1' rowspan=' 1' colspan=' 1'>Sequential    logic
+                                                <br/> 
+                                                [ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-04-1_s.pdf'>slides</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-04-1_n.pdf'>notes</a>
+                                                | <a target='_top' href='https://assets.phoo.org/book/pica/chap-logic.pdf'>extended notes</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lecture             slot <br/>  (synchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>22/01/24 <br/> QB-1.68
+   </td>   
+    <td class='lec-1' rowspan=' 1' colspan=' 1'>Sequential    logic
+                                                <br/> 
+                                                [ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-04-2_s.pdf'>slides</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-04-2_n.pdf'>notes</a>
+                                                | <a target='_top' href='https://assets.phoo.org/book/pica/chap-logic.pdf'>extended notes</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lecture             slot <br/>  (synchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>22/01/24 <br/> QB-1.68
+   </td>   
+    <td class='lec-1' rowspan=' 1' colspan=' 1'>Sequential    logic
+                                                <br/> 
+                                                [ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-04-3_s.pdf'>slides</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-04-3_n.pdf'>notes</a>
+                                                | <a target='_top' href='https://assets.phoo.org/book/pica/chap-logic.pdf'>extended notes</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lab.                slot <br/>  (synchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>23/01/24 <br/> MVB-2.11
+   </td>
+    <td class='lab'   rowspan=' 1' colspan=' 1'>[ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/sheet/lab-04_q.pdf'>question</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/sheet/lab-04_s.pdf'>solution</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Additional resources
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'><ul><li><a target='_top' href='https://en.wikipedia.org/wiki/Sequential_logic'>Wikipedia: Sequential logic</a>
+                                                   </li>
+                                                    <li><a target='_top' href='https://en.wikipedia.org/wiki/Static_random-access_memory'>Wikipedia: Static Random-Access Memory (SRAM)</a>
+                                                   </li>
+                                                    <li><a target='_top' href='https://en.wikipedia.org/wiki/Dynamic_random-access_memory'>Wikipedia: Dynamic Random-Access Memory (DRAM)</a>
+                                                   </li>
+                                               </ul>
+  </tr>
+
+   <tr class='gap'/>
+
+  <!-- ..................................................................... -->
+  <!-- week  5 -->
+
+   <tr>
+    <td class='blank' rowspan=' 5' colspan=' 1'> 5
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lecture             slot <br/>  (synchronous)
+   </td>   
+    <td class='blank' rowspan=' 1' colspan=' 1'>22/01/24 <br/> QB-1.68
+   </td>
+    <td class='lec-1' rowspan=' 1' colspan=' 1'>Verilog
+                                                <br/> 
+                                                [ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-05-1_s.pdf'>slides</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-05-1_n.pdf'>notes</a>
+                                                | <a target='_top' href='https://assets.phoo.org/book/pica/chap-verilog.pdf'>extended notes</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lecture             slot <br/>  (synchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>22/01/24 <br/> QB-1.68
+   </td>   
+    <td class='lec-1' rowspan=' 1' colspan=' 1'>Verilog
+                                                <br/> 
+                                                [ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-05-2_s.pdf'>slides</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-05-2_n.pdf'>notes</a>
+                                                | <a target='_top' href='https://assets.phoo.org/book/pica/chap-verilog.pdf'>extended notes</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lecture             slot <br/>  (synchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>22/01/24 <br/> QB-1.68
+   </td>   
+    <td class='lec-1' rowspan=' 1' colspan=' 1'>Verilog
+                                                <br/> 
+                                                [ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-05-3_s.pdf'>slides</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-05-3_n.pdf'>notes</a>
+                                                | <a target='_top' href='https://assets.phoo.org/book/pica/chap-verilog.pdf'>extended notes</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lab.                slot <br/>  (synchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>23/01/24 <br/> MVB-2.11
+   </td>
+    <td class='lab'   rowspan=' 1' colspan=' 1'>[ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/sheet/lab-05_q.pdf'>question</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/sheet/lab-05_s.pdf'>solution</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Additional resources
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'><ul><li><a target='_top' href='https://en.wikipedia.org/wiki/Verilog'>Wikipedia: Verilog</a>
+                                                   </li>
+                                               </ul>
+  </tr>
+
+   <tr class='gap'/>
+
+  <!-- ..................................................................... -->
+  <!-- week  6 -->
+
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'> 6
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 3'><b>Consolidation week</b>
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Formative exam #1
+   </td>
+  </tr>
+
+   <tr class='gap'/>
+
+  <!-- ..................................................................... -->
+  <!-- week  7 -->
+
+   <tr>
+    <td class='blank' rowspan=' 4' colspan=' 1'> 7
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lecture             slot <br/>  (synchronous)
+   </td>   
+    <td class='blank' rowspan=' 1' colspan=' 1'>22/01/24 <br/> QB-1.68
+   </td>
+    <td class='lec-1' rowspan=' 1' colspan=' 1'>Assignment   intro.
+                                                <br/> 
+                                                [ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-07-1_s.pdf'>slides</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-07-1_n.pdf'>notes</a>
+                                                ]
+   </td>
+    <td class='blank' rowspan='19' colspan=' 1'>Summative coursework assignment (<code>Encrypt</code>)
+                                                <br/>
+                                                [ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/cw/Encrypt/question.pdf'>description</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lecture             slot <br/>  (synchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>22/01/24 <br/> QB-1.68
+   </td>   
+    <td class='lec-1' rowspan=' 1' colspan=' 1'>Integer arithmetic
+                                                <br/> 
+                                                [ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-07-2_s.pdf'>slides</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-07-2_n.pdf'>notes</a>
+                                                | <a target='_top' href='https://assets.phoo.org/book/pica/chap-arith.pdf'>extended notes</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lab.                slot <br/>  (synchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>23/01/24 <br/> MVB-2.11
+   </td>
+    <td class='lab'   rowspan=' 1' colspan=' 1'>[ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/sheet/lab-07_q.pdf'>question</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/sheet/lab-07_s.pdf'>solution</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Additional resources
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'><ul><li><a target='_top' href='https://en.wikipedia.org/wiki/Integer_(computer_science)'>Wikipedia: Integer</a>
+                                                   </li>
+                                                    <li><a target='_top' href='https://en.wikipedia.org/wiki/Signed_number_representations'>Wikipedia: Signed number representations</a>
+                                                   </li>
+                                                    <li><a target='_top' href='https://en.wikipedia.org/wiki/Binary_multiplier'>Wikipedia: Multipler</a>
+                                                   </li>
+                                               </ul>
+  </tr>
+
+   <tr class='gap'/>
+
+  <!-- ..................................................................... -->
+  <!-- week  8 -->
+
+   <tr>
+    <td class='blank' rowspan=' 4' colspan=' 1'> 8
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lecture             slot <br/>  (synchronous)
+   </td>   
+    <td class='blank' rowspan=' 1' colspan=' 1'>22/01/24 <br/> QB-1.68
+   </td>
+    <td class='lec-1' rowspan=' 1' colspan=' 1'>Finite State Machines (FSMs)
+                                                <br/> 
+                                                [ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-08-1_s.pdf'>slides</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-08-1_n.pdf'>notes</a>
+                                                | <a target='_top' href='https://assets.phoo.org/book/pica/chap-fsm.pdf'>extended notes</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lecture             slot <br/>  (synchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>22/01/24 <br/> QB-1.68
+   </td>   
+    <td class='lec-1' rowspan=' 1' colspan=' 1'>Finite State Machines (FSMs)
+                                                <br/> 
+                                                [ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-08-2_s.pdf'>slides</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-08-2_n.pdf'>notes</a>
+                                                | <a target='_top' href='https://assets.phoo.org/book/pica/chap-fsm.pdf'>extended notes</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lab.                slot <br/>  (synchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>23/01/24 <br/> MVB-2.11
+   </td>
+    <td class='lab'   rowspan=' 1' colspan=' 1'>[ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/sheet/lab-08_q.pdf'>question</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/sheet/lab-08_s.pdf'>solution</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Additional resources
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'><ul><li><a target='_top' href='https://en.wikipedia.org/wiki/Finite-state_machine'>Wikipedia: Finite State Machine (FSM)</a>
+                                                   </li>
+                                               </ul>
+  </tr>
+
+   <tr class='gap'/>
+
+  <!-- ..................................................................... -->
+  <!-- week  9 -->
+
+   <tr>
+    <td class='blank' rowspan=' 4' colspan=' 1'> 9
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lecture             slot <br/>  (synchronous)
+   </td>   
+    <td class='blank' rowspan=' 1' colspan=' 1'>22/01/24 <br/> QB-1.68
+   </td>
+    <td class='lec-1' rowspan=' 1' colspan=' 1'>Finite State Machines (FSMs)
+                                                <br/> 
+                                                [ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-09-1_s.pdf'>slides</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-09-1_n.pdf'>notes</a>
+                                                | <a target='_top' href='https://assets.phoo.org/book/pica/chap-fsm.pdf'>extended notes</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lecture             slot <br/>  (synchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>22/01/24 <br/> QB-1.68
+   </td>   
+    <td class='lec-1' rowspan=' 1' colspan=' 1'>Case study: HP35
+                                                <br/> 
+                                                [ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-09-2_s.pdf'>slides</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-09-2_n.pdf'>notes</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lab.                slot <br/>  (synchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>23/01/24 <br/> MVB-2.11
+   </td>
+    <td class='lab'   rowspan=' 1' colspan=' 1'>[ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/sheet/lab-09_q.pdf'>question</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/sheet/lab-09_s.pdf'>solution</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Additional resources
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'><ul><li><a target='_top' href='https://en.wikipedia.org/wiki/Finite-state_machine'>Wikipedia: Finite State Machine (FSM)</a>
+                                                   </li>
+                                                    <li><a target='_top' href='https://en.wikipedia.org/wiki/HP-35'>Wikipedia: HP-35</a>
+                                                   </li>
+                                               </ul>
+  </tr>
+
+   <tr class='gap'/>
+
+  <!-- ..................................................................... -->
+  <!-- week 10 -->
+
+   <tr>
+    <td class='blank' rowspan=' 4' colspan=' 1'>10
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lecture             slot <br/>  (synchronous)
+   </td>   
+    <td class='blank' rowspan=' 1' colspan=' 1'>22/01/24 <br/> QB-1.68
+   </td>
+    <td class='lec-1' rowspan=' 1' colspan=' 1'>Register Machines (RMs)
+                                                <br/> 
+                                                [ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-10-1_s.pdf'>slides</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-10-1_n.pdf'>notes</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lecture             slot <br/>  (synchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>22/01/24 <br/> QB-1.68
+   </td>   
+    <td class='lec-1' rowspan=' 1' colspan=' 1'>Register Machines (RMs)
+                                                <br/> 
+                                                [ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-10-2_s.pdf'>slides</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-10-2_n.pdf'>notes</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lab.                slot <br/>  (synchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>23/01/24 <br/> MVB-2.11
+   </td>
+    <td class='lab'   rowspan=' 1' colspan=' 1'>[ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/sheet/lab-10_q.pdf'>question</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/sheet/lab-10_s.pdf'>solution</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Additional resources
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'><ul><li><a target='_top' href='https://en.wikipedia.org/wiki/Register_machine'>Wikipedia: Register Machine (RM)</a>
+                                                   </li>
+                                               </ul>
+  </tr>
+
+   <tr class='gap'/>
+
+  <!-- ..................................................................... -->
+  <!-- week 11 -->
+
+   <tr>
+    <td class='blank' rowspan=' 4' colspan=' 1'>11
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lecture             slot <br/>  (synchronous)
+   </td>   
+    <td class='blank' rowspan=' 1' colspan=' 1'>22/01/24 <br/> QB-1.68
+   </td>
+    <td class='lec-1' rowspan=' 1' colspan=' 1'>Case study: ASCC and EDVAC
+                                                <br/> 
+                                                [ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-11-1_s.pdf'>slides</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-11-1_n.pdf'>notes</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lecture             slot <br/>  (synchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>22/01/24 <br/> QB-1.68
+   </td>   
+    <td class='lec-1' rowspan=' 1' colspan=' 1'>         TB1 outro.
+                                                <br/> 
+                                                [ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-11-2_s.pdf'>slides</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/slide/lec-11-2_n.pdf'>notes</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Lab.                slot <br/>  (synchronous)
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>23/01/24 <br/> MVB-2.11
+   </td>
+    <td class='lab'   rowspan=' 1' colspan=' 1'>[ <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/sheet/lab-11_q.pdf'>question</a>
+                                                | <a target='_top' href='https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/sheet/lab-11_s.pdf'>solution</a>
+                                                ]
+   </td>
+  </tr>
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Additional resources
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 1'>
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'><ul><li><a target='_top' href='https://en.wikipedia.org/wiki/Harvard_Mark_I'>Wikipedia: ASCC</a>
+                                                   </li>
+                                                    <li><a target='_top' href='https://en.wikipedia.org/wiki/EDVAC'>Wikipedia: EDVAC</a>
+                                                   </li>
+                                               </ul>
+  </tr>
+
+   <tr class='gap'/>
+
+  <!-- ..................................................................... -->
+  <!-- week 12 -->
+
+   <tr>
+    <td class='blank' rowspan=' 1' colspan=' 1'>12
+   </td>    
+    <td class='blank' rowspan=' 1' colspan=' 3'><b>Assessment preparation week</b>
+   </td>
+    <td class='blank' rowspan=' 1' colspan=' 1'>Formative exam #2
+   </td>
+  </tr>
+
+   <tr class='gap'/>
+
+  <!-- ..................................................................... -->
+ 
+ </table>
+ </center>
+
+  <!-- ===================================================================== -->
+
+ </p>
+
+ <hr/>
+
+  <h2 id='material-TB2'>Unit material: TB-2</h2>
+  <p>
+    <!-- ===================================================================== -->
+
+  <!-- ===================================================================== -->
+
+ </p>
+
+ <hr/>
+
+  <!-- ===================================================================== -->
+
+  <h2 id='vm'>Unit virtual machine</h2>
+  <p>
+  IT provision for the unit is based on the assumption you work in the lab. 
+  using UoB-managed and thus 
+  <i>  supported</i> equipment.  
+  If you need or prefer to use your own equipment, however, 
+  <i>unsupported</i> alternatives include the use of a bespoke
+  <a href='https://en.wikipedia.org/wiki/Virtual_machine'>Virtual Machine (VM)</a>
+  which aims to replicate a lab. workstation as closely as possible:
+
+  <!--- -------------------------------------------------------------------- --->
+<ul>
+<li><p>Read over some sort of <a href="https://www.google.com/search?q=vagrant+tutorial">tutorial</a> material if need be.</p></li>
+<li><p>Install various pre-requisites, i.e.,</p>
+<ul>
+<li><p><a href="https://www.virtualbox.org">VirtualBox</a> including any extension packs necessary, e.g., for USB device support, and</p></li>
+<li><p><a href="https://www.vagrantup.com">Vagrant</a>, plus associated plug-ins, as need be, e.g., by executing</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="ex">vagrant</span> plugin install vagrant-vbguest</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a><span class="ex">vagrant</span> plugin install vagrant-disksize</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a><span class="ex">vagrant</span> plugin install vagrant-reload</span></code></pre></div></li>
+</ul>
+<p>Note that:</p>
+<ul>
+<li><p>using a recent version of VirtualBox is <em>strongly</em> recommended: currently this is 6.x, whereas you may get 5.x when using some package managers,</p></li>
+<li><p>when using a Windows-based host, you may <em>also</em> need to install an X server (e.g., <a href="https://freedesktop.org/wiki/Xming">Xming</a>) in order to support forwarded X11 client interfaces, and</p></li>
+<li><p>some features of the VM (e.g., access to USB devices) <em>may</em> demand you are a member of the <a href="https://www.virtualbox.org/manual/ch02.html#install-linux-vboxusers"><code>vboxusers</code></a>; group; you can ensure this by executing</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a><span class="fu">sudo</span> usermod --append --groups vboxusers <span class="va">${USER}</span></span></code></pre></div></li>
+</ul></li>
+<li><p>Launch the VM using <em>either</em> of the following approaches:</p>
+<ol type="1">
+<li><p>Self-provisioned:</p>
+<ul>
+<li><p>execute</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true"></a><span class="fu">mkdir</span> ./COMS10015</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true"></a><span class="bu">cd</span> ./COMS10015</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true"></a><span class="fu">wget</span> https://assets.phoo.org/COMS10015_2023_TB-1/csdsp/vm/vm.tar.gz</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true"></a><span class="fu">tar</span> --gzip --extract --file=<span class="st">&#39;vm.tar.gz&#39;</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true"></a><span class="bu">cd</span> ./vm</span></code></pre></div>
+<p>to download a <code>Vagrantfile</code> that references an <a href="https://app.vagrantup.com/boxomatic/boxes/rocky-8">un-provisioned</a> base box,</p></li>
+<li><p><a href="https://www.vagrantup.com/docs/vagrantfile">edit</a> the resulting <code>Vagrantfile</code> to suit any specific requirements,</p></li>
+<li><p>execute</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true"></a><span class="ex">vagrant</span> up</span></code></pre></div>
+<p>after which the VM boots, and the provisioning step executes: this may take some time.</p></li>
+</ul></li>
+<li><p>Pre-provisioned:</p>
+<ul>
+<li><p>execute</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true"></a><span class="fu">mkdir</span> ./COMS10015</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true"></a><span class="bu">cd</span> ./COMS10015</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true"></a><span class="fu">mkdir</span> ./vm</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true"></a><span class="bu">cd</span> ./vm</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true"></a><span class="ex">vagrant</span> init danpage/COMS10015</span></code></pre></div>
+<p>to generate a <code>Vagrantfile</code> that references a <a href="https://app.vagrantup.com/danpage/boxes/COMS10015">pre-provisioned</a> base box,</p></li>
+<li><p><a href="https://www.vagrantup.com/docs/vagrantfile">edit</a> the resulting <code>Vagrantfile</code> to suit any specific requirements,</p></li>
+<li><p>execute</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true"></a><span class="ex">vagrant</span> up</span></code></pre></div>
+<p>after which the VM boots: this may take some time.</p></li>
+</ul></li>
+</ol></li>
+<li><p>Access the VM:</p>
+<ul>
+<li><p>check the SSH configuration matches what you expect by executing</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true"></a><span class="ex">vagrant</span> ssh-config</span></code></pre></div></li>
+<li><p>automatically use SSH to access the VM, e.g., by executing</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true"></a><span class="ex">vagrant</span> ssh</span></code></pre></div></li>
+<li><p>manually use SSH to access the VM, e.g., by executing</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true"></a><span class="fu">ssh</span> vagrant@localhost -p 2222 -i .vagrant/machines/default/virtualbox/private_key -X</span></code></pre></div>
+<p>where <code>-p</code> specifies a port (on <code>localhost</code>) matching the SSH configuration, <code>-i</code> specifies an identity whereby the private key for <code>vagrant</code> is used, and <code>-X</code> enables X11 forwarding, i.e., display of GUI applications on the host desktop.</p></li>
+</ul>
+<p>Note that <code>/home/vagrant/share</code> represents a <a href="https://www.virtualbox.org/manual/ch04.html#sharedfolders">shared folder</a> accessible from both the host and guest VM. We recommend using this for transfer of data <b>only</b>, however, rather than as a “live”, working file system: it seems the VirtualBox implementation of this feature is imperfect, meaning that the latter can result in somewhat cryptic errors which are difficult to resolve.</p></li>
+</ul>
+<!--- -------------------------------------------------------------------- --->
+
+ </p>
+
+ <hr/>
+
+  <!-- ===================================================================== -->
+
+</body>
+
+</html>

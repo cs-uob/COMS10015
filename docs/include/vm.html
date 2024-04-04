@@ -1,0 +1,62 @@
+<!--- -------------------------------------------------------------------- --->
+<ul>
+<li><p>Read over some sort of <a href="https://www.google.com/search?q=vagrant+tutorial">tutorial</a> material if need be.</p></li>
+<li><p>Install various pre-requisites, i.e.,</p>
+<ul>
+<li><p><a href="https://www.virtualbox.org">VirtualBox</a> including any extension packs necessary, e.g., for USB device support, and</p></li>
+<li><p><a href="https://www.vagrantup.com">Vagrant</a>, plus associated plug-ins, as need be, e.g., by executing</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="ex">vagrant</span> plugin install vagrant-vbguest</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a><span class="ex">vagrant</span> plugin install vagrant-disksize</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a><span class="ex">vagrant</span> plugin install vagrant-reload</span></code></pre></div></li>
+</ul>
+<p>Note that:</p>
+<ul>
+<li><p>using a recent version of VirtualBox is <em>strongly</em> recommended: currently this is 6.x, whereas you may get 5.x when using some package managers,</p></li>
+<li><p>when using a Windows-based host, you may <em>also</em> need to install an X server (e.g., <a href="https://freedesktop.org/wiki/Xming">Xming</a>) in order to support forwarded X11 client interfaces, and</p></li>
+<li><p>some features of the VM (e.g., access to USB devices) <em>may</em> demand you are a member of the <a href="https://www.virtualbox.org/manual/ch02.html#install-linux-vboxusers"><code>vboxusers</code></a>; group; you can ensure this by executing</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a><span class="fu">sudo</span> usermod --append --groups vboxusers <span class="va">${USER}</span></span></code></pre></div></li>
+</ul></li>
+<li><p>Launch the VM using <em>either</em> of the following approaches:</p>
+<ol type="1">
+<li><p>Self-provisioned:</p>
+<ul>
+<li><p>execute</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true"></a><span class="fu">mkdir</span> ./COMS10015</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true"></a><span class="bu">cd</span> ./COMS10015</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true"></a><span class="fu">wget</span> https://assets.phoo.org/COMS10015_2023_TB-1/csdsp/vm/vm.tar.gz</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true"></a><span class="fu">tar</span> --gzip --extract --file=<span class="st">&#39;vm.tar.gz&#39;</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true"></a><span class="bu">cd</span> ./vm</span></code></pre></div>
+<p>to download a <code>Vagrantfile</code> that references an <a href="https://app.vagrantup.com/boxomatic/boxes/rocky-8">un-provisioned</a> base box,</p></li>
+<li><p><a href="https://www.vagrantup.com/docs/vagrantfile">edit</a> the resulting <code>Vagrantfile</code> to suit any specific requirements,</p></li>
+<li><p>execute</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true"></a><span class="ex">vagrant</span> up</span></code></pre></div>
+<p>after which the VM boots, and the provisioning step executes: this may take some time.</p></li>
+</ul></li>
+<li><p>Pre-provisioned:</p>
+<ul>
+<li><p>execute</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true"></a><span class="fu">mkdir</span> ./COMS10015</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true"></a><span class="bu">cd</span> ./COMS10015</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true"></a><span class="fu">mkdir</span> ./vm</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true"></a><span class="bu">cd</span> ./vm</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true"></a><span class="ex">vagrant</span> init danpage/COMS10015</span></code></pre></div>
+<p>to generate a <code>Vagrantfile</code> that references a <a href="https://app.vagrantup.com/danpage/boxes/COMS10015">pre-provisioned</a> base box,</p></li>
+<li><p><a href="https://www.vagrantup.com/docs/vagrantfile">edit</a> the resulting <code>Vagrantfile</code> to suit any specific requirements,</p></li>
+<li><p>execute</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true"></a><span class="ex">vagrant</span> up</span></code></pre></div>
+<p>after which the VM boots: this may take some time.</p></li>
+</ul></li>
+</ol></li>
+<li><p>Access the VM:</p>
+<ul>
+<li><p>check the SSH configuration matches what you expect by executing</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true"></a><span class="ex">vagrant</span> ssh-config</span></code></pre></div></li>
+<li><p>automatically use SSH to access the VM, e.g., by executing</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true"></a><span class="ex">vagrant</span> ssh</span></code></pre></div></li>
+<li><p>manually use SSH to access the VM, e.g., by executing</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true"></a><span class="fu">ssh</span> vagrant@localhost -p 2222 -i .vagrant/machines/default/virtualbox/private_key -X</span></code></pre></div>
+<p>where <code>-p</code> specifies a port (on <code>localhost</code>) matching the SSH configuration, <code>-i</code> specifies an identity whereby the private key for <code>vagrant</code> is used, and <code>-X</code> enables X11 forwarding, i.e., display of GUI applications on the host desktop.</p></li>
+</ul>
+<p>Note that <code>/home/vagrant/share</code> represents a <a href="https://www.virtualbox.org/manual/ch04.html#sharedfolders">shared folder</a> accessible from both the host and guest VM. We recommend using this for transfer of data <b>only</b>, however, rather than as a “live”, working file system: it seems the VirtualBox implementation of this feature is imperfect, meaning that the latter can result in somewhat cryptic errors which are difficult to resolve.</p></li>
+</ul>
+<!--- -------------------------------------------------------------------- --->

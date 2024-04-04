@@ -1,0 +1,36 @@
+# Copyright (C) 2017 Daniel Page <csdsp@bristol.ac.uk>
+#
+# Use of this source code is restricted per the CC BY-NC-ND license, a copy of 
+# which can be found via http://creativecommons.org (and should be included as 
+# LICENSE.txt within the associated archive or repository).
+
+Vagrant.configure( "2" ) do |config|
+  # define base box
+  config.vm.box = "boxomatic/rocky-8"
+
+  # configure guest additions
+  config.vbguest.auto_update = false
+
+  # configure a generous boot timeout
+  config.vm.boot_timeout = 600
+
+  # configure disk size
+  config.disksize.size = '500GB'
+
+  # configure SSH-based access
+  config.ssh.forward_agent = true
+  config.ssh.forward_x11   = true
+
+  # configure shared folder between host and guest
+  config.vm.synced_folder "./share", "/home/vagrant/share", owner: "vagrant", group: "vagrant", type: "virtualbox"
+
+  # provisioning step: general-purpose prologue
+  config.vm.provision "prologue", type: "shell", preserve_order: true, run: "once", path: "provision_prologue.sh",
+                                  env: { "UNIT_CODE" => "COMS10015", "UNIT_YEAR" => "2023", "UNIT_PATH" => "COMS10015_2023_TB-1" }
+  # provisioning step: special-purpose wrt. unit
+  config.vm.provision "unit",     type: "shell", preserve_order: true, run: "once", path: "provision_unit.sh",
+                                  env: { "UNIT_CODE" => "COMS10015", "UNIT_YEAR" => "2023", "UNIT_PATH" => "COMS10015_2023_TB-1" }
+  # provisioning step: general-purpose epilogue
+  config.vm.provision "epilogue", type: "shell", preserve_order: true, run: "once", path: "provision_epilogue.sh",
+                                  env: { "UNIT_CODE" => "COMS10015", "UNIT_YEAR" => "2023", "UNIT_PATH" => "COMS10015_2023_TB-1" }
+end
