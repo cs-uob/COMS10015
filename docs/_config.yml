@@ -1,5 +1,6 @@
 title: "COMS10015"
 email: "dan@phoo.org"
-url: "https://www.phoo.org/COMS10015"
+baseurl: ""
+url: "https://cs-uob.github.io/COMS10015"
 markdown: kramdown
 permalink: pretty
