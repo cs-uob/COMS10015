@@ -1,0 +1,56 @@
+/* ========================================================================== */
+
+.site-nav, .site-header, .site-footer {
+  width: 100%;
+}
+
+.side-bar {
+  @include mq(lg) {
+    width: $nav-width;
+  }
+}
+
+.main {
+  @include mq(lg) {
+    max-width: 75%;
+    margin-left: calc($nav-width + 5%);
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+
+p     { text-align: justify; text-justify: inter-word; }
+li    { text-align: justify; text-justify: inter-word; }
+
+table { border-collapse: collapse; empty-cells: show; }
+
+table.material   tr     {
+  height : 3em;
+}
+table.material   tr.gap {
+  height : 1em;
+}
+
+td.gap        {  
+                                                                                             
+}
+td.blank      { 
+  border: 1px solid black; vertical-align: center; horizontal-align: center; text-align: center; background: #f1f1f1; 
+}
+td.lec-1      { 
+  border: 1px solid black; vertical-align: center; horizontal-align: center; text-align: center; background: #ccffff; 
+}
+td.lec-2      { 
+  border: 1px solid black; vertical-align: center; horizontal-align: center; text-align: center; background: #ccffcc; 
+}
+td.lec-3      { 
+  border: 1px solid black; vertical-align: center; horizontal-align: center; text-align: center; background: #ffcccc; 
+}
+td.lab        { 
+  border: 1px solid black; vertical-align: center; horizontal-align: center; text-align: center; background: #ffffcc; 
+}
+td.assessment { 
+  border: 1px solid black; vertical-align: center; horizontal-align: center; text-align: center; background: #ffffcc; 
+}
+
+/* ========================================================================== */

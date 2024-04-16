@@ -1,6 +1,19 @@
-title: "COMS10015"
-email: "dan@phoo.org"
-baseurl: ""
-url: "https://cs-uob.github.io/COMS10015"
-markdown: kramdown
-permalink: pretty
+url : "https://cs-uob.github.io"
+baseurl : "/COMS10015"
+remote_theme : "just-the-docs/just-the-docs"
+
+title : "COMS10015"
+description : ""
+
+aux_links :
+  "COMS10015 via Blackboard" : "https://www.ole.bris.ac.uk"
+
+color_scheme : light
+
+search_enabled : true
+heading_anchors : false
+
+back_to_top : true
+back_to_top_text : "Back to top"
+
+permalink : pretty

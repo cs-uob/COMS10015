@@ -1,8 +1,8 @@
 build :
-	@jekyll build
+	@bundle exec jekyll build
 
 serve :
-	@jekyll serve --watch --livereload
+	@bundle exec jekyll serve --incremental --config _config.yml,_config-local.yml
 
 clean :
-	@rm --force --recursive ./.jekyll-cache ./_site
+	@rm --force --recursive _site .sass-cache .jekyll-cache .jekyll-metadata
