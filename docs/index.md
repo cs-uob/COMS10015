@@ -21,6 +21,7 @@ Quoting the catalogue entry, the remit of this unit can be summarised as follows
 
 {: .highlight }
  <div markdown='block'>
+ <i>
 [...] this unit delivers an introduction to computer architecture: the focus is on bridging the gap between high-level programming languages and the hardware (e.g., micro-processors) on which associated programs execute. The unit content can be described as three main topics, which gradually build from lower to higher level concepts:
 
 1. From Mathematics and Physics to digital logic:
@@ -37,6 +38,7 @@ Quoting the catalogue entry, the remit of this unit can be summarised as follows
    - development tools: assembly language; assembly and linkage processes; debuggers,
    - support for structured programming (e.g., function calls),
    - support for operating systems (e.g., interrupts, protection).
+</i>
 </div>
 
 Note that
