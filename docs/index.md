@@ -60,6 +60,6 @@ Note that
 
 # Contact Us
 
-- Tom Deakin (Lecturer and Unit director): [`tom.deakin@bristol.ac.uk`](mailto:tom.deakin@bristol.ac.uk?subject=COMS10015)
+- Tom Deakin (Lecturer and Unit Director): [`tom.deakin@bristol.ac.uk`](mailto:tom.deakin@bristol.ac.uk?subject=COMS10015)
 - Daniel Page (Lecturer): [`daniel.page@bristol.ac.uk`](mailto:daniel.page@bristol.ac.uk?subject=COMS10015)
 
