@@ -1,32 +1,5 @@
 /* ========================================================================== */
 
-.site-nav, .site-header, .site-footer {
-  width: 100%;
-}
-
-.side-bar {
-  @include mq(lg) {
-    width: $nav-width;
-  }
-}
-
-.main {
-  @include mq(lg) {
-    max-width: 100%;
-    margin-left: $nav-width;
-  }
-}
-
-.main-content-wrap  {
-  @include mq(lg) {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-}
-
-
-/* -------------------------------------------------------------------------- */
-
 p     { text-align: justify; text-justify: inter-word; }
 li    { text-align: justify; text-justify: inter-word; }
 
