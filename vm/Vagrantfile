@@ -26,11 +26,11 @@ Vagrant.configure( "2" ) do |config|
 
   # provisioning step: general-purpose prologue
   config.vm.provision "prologue", type: "shell", preserve_order: true, run: "once", path: "provision_prologue.sh",
-                                  env: { "UNIT_CODE" => "COMS10015", "UNIT_YEAR" => "2023", "UNIT_PATH" => "COMS10015_2023_TB-1" }
+                                  env: { "UNIT_CODE" => "COMS10015", "UNIT_YEAR" => "2024", "UNIT_PATH" => "COMS10015_2024_TB-4" }
   # provisioning step: special-purpose wrt. unit
   config.vm.provision "unit",     type: "shell", preserve_order: true, run: "once", path: "provision_unit.sh",
-                                  env: { "UNIT_CODE" => "COMS10015", "UNIT_YEAR" => "2023", "UNIT_PATH" => "COMS10015_2023_TB-1" }
+                                  env: { "UNIT_CODE" => "COMS10015", "UNIT_YEAR" => "2024", "UNIT_PATH" => "COMS10015_2024_TB-4" }
   # provisioning step: general-purpose epilogue
   config.vm.provision "epilogue", type: "shell", preserve_order: true, run: "once", path: "provision_epilogue.sh",
-                                  env: { "UNIT_CODE" => "COMS10015", "UNIT_YEAR" => "2023", "UNIT_PATH" => "COMS10015_2023_TB-1" }
+                                  env: { "UNIT_CODE" => "COMS10015", "UNIT_YEAR" => "2024", "UNIT_PATH" => "COMS10015_2024_TB-4" }
 end
