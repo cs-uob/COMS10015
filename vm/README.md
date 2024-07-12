@@ -47,7 +47,7 @@
        ```sh
        mkdir ./COMS10015
        cd ./COMS10015
-       wget https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/vm/vm.tar.gz
+       wget --quiet https://assets.phoo.org/COMS10015_2024_TB-4/csdsp/vm/vm.tar.gz
        tar --gzip --extract --file='vm.tar.gz'
        cd ./vm
        ```
