@@ -1,12 +1,6 @@
 ---
-layout: default
-nav_order: 4
-title: Virtual Machine (VM)
+permalink: /vm
 ---
-
-{::nomarkdown} 
-{% include banner.html %}
-{:/nomarkdown} 
 
 # Virtual Machine (VM)
 

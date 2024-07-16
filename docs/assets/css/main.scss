@@ -1,19 +1,51 @@
+---
+search: false
+---
+
 /* ========================================================================== */
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+$global-font-family : $serif;
+
+.page__title {
+  display: none;
+}
+
+html {
+    font-size: 14px;
+
+  @include breakpoint($medium)  {
+    font-size: 16px;
+  }
+  @include breakpoint($large)   {
+    font-size: 18px;
+  }
+  @include breakpoint($x-large) {
+    font-size: 20px;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
 
 p     { text-align: justify; text-justify: inter-word; }
 li    { text-align: justify; text-justify: inter-word; }
 
-table { border-collapse: collapse; empty-cells: show; }
-
-table.material   tr     {
-  height : 3em;
+table.material tr     {
+  height : 3em; border-collapse: collapse; empty-cells: hide;
 }
-table.material   tr.gap {
-  height : 1em;
+table.material td.gap {
+  height : 1em; border-collapse: collapse; empty-cells: hide;
+}
+table.material tr.gap {
+  height : 1em; border-collapse: collapse; empty-cells: hide;
 }
 
 td.gap        {  
-                                                                                             
+  border: none;                                                                                            
 }
 td.blank      { 
   border: 1px solid black; vertical-align: center; horizontal-align: center; text-align: center; background: #f1f1f1; 

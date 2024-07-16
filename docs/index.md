@@ -1,12 +1,6 @@
 ---
-layout: default
-nav_order: 1
-title: Home
+permalink: /
 ---
-
-{::nomarkdown} 
-{% include banner.html %}
-{:/nomarkdown} 
 
 # Welcome!
 
@@ -19,7 +13,7 @@ a unit operated by the
 [University of Bristol (UoB)](https://www.bristol.ac.uk).
 Quoting the catalogue entry, the remit of this unit can be summarised as follows:
 
-{: .highlight }
+{: .notice--info}
  <div markdown='block' style='font-style: italic'>
 [...] this unit delivers an introduction to computer architecture: the focus is on bridging the gap between high-level programming languages and the hardware (e.g., micro-processors) on which associated programs execute. The unit content can be described as three main topics, which gradually build from lower to higher level concepts:
 

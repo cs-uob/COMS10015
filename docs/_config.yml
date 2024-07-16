@@ -1,19 +1,50 @@
-url : "https://cs-uob.github.io"
-baseurl : "/COMS10015"
-remote_theme : "just-the-docs/just-the-docs"
+url: "https://cs-uob.github.io"
+baseurl: "/COMS10015"
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 
-title : "COMS10015"
-description : ""
+title: "COMS10015"
+subtitle: "Computer Architecture"
+title_separator: "|"
 
-aux_links :
-  "COMS10015 via Blackboard" : "https://www.ole.bris.ac.uk"
+repository: "cs-uob/COMS10015"
+copyright: "COMS10015"
+copyright_url: "https://cs-uob.github.io/COMS10015"
+minimal_mistakes_skin: "contrast"
+locale: "en"
+enable_copy_code_button: true
+breadcrumbs: false
+search: false
+atom_feed:
+  hide: true
 
-color_scheme : light
+include:
+  - _pages
 
-search_enabled : true
-heading_anchors : false
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
 
-back_to_top : true
-back_to_top_text : "Back to top"
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      classes: wide
+      header:
+        image: "/assets/image/banner.png"
+      sidebar:
+        nav: "side"
 
-permalink : pretty
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/bristolcs"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/cs-uob"
