@@ -45,8 +45,7 @@ Note that
    *static* content 
   as possible, selected but important
   *dynamic* content 
-  is still only 
-  accessible "inside" UoB and so via the associated
+  is only accessible via the associated
   [Blackboard web-page](https://www.ole.bris.ac.uk):
   important examples include
   any unit announcements,
