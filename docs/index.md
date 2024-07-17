@@ -43,14 +43,16 @@ Note that
   "[Blackboard](https://www.blackboard.com)-free"
   access to as much 
    *static* content 
-  as possible, selected
+  as possible, selected but important
   *dynamic* content 
-  is still
-  internally accessible
-  only: important examples include
-  any unit announcements
+  is still only 
+  accessible "inside" UoB and so via the associated
+  [Blackboard web-page](https://www.ole.bris.ac.uk):
+  important examples include
+  any unit announcements,
+  the unit forum,
   and
-  the unit forum.
+  any marks and feedback related to assessment.
 
 # Contact Us
 
