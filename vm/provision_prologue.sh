@@ -14,6 +14,7 @@ sudo dnf --assumeyes update
 # software install: packaged software
 sudo dnf --assumeyes install autoconf
 sudo dnf --assumeyes install chrony
+sudo dnf --assumeyes install dpkg
 sudo dnf --assumeyes install emacs
 sudo dnf --assumeyes install gcc 
 sudo dnf --assumeyes install gcc-c++
