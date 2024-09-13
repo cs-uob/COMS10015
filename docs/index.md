@@ -43,7 +43,7 @@ Note that
   "[Blackboard](https://www.blackboard.com)-free"
   access to as much 
    *static* content 
-  as possible, selected but important
+  as possible, selected internal-facing
   *dynamic* content 
   is only accessible via the associated
   [Blackboard web-page](https://www.ole.bris.ac.uk):
@@ -51,7 +51,7 @@ Note that
   any unit announcements,
   the unit forum,
   and
-  any marks and feedback related to assessment.
+  any submission points, marks, and feedback related to assessment.
 
 # Contact Us
 
