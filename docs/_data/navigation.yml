@@ -3,9 +3,9 @@ side:
     children:
       - title: "Home"
         url: "/"
-      - title: "Material-TB1"
+      - title: "Material: TB1"
         url: "/material-TB1"
-      - title: "Material-TB2"
+      - title: "Material: TB2"
         url: "/material-TB2"
       - title: "Virtual Machine (VM)"
         url: "/vm"
