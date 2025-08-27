@@ -18,12 +18,12 @@ Quoting the catalogue entry, the remit of this unit can be summarised as follows
 [...] this unit delivers an introduction to computer architecture: the focus is on bridging the gap between high-level programming languages and the hardware (e.g., micro-processors) on which associated programs execute. The unit content can be described as three main topics, which gradually build from lower to higher level concepts:
 
 1. From Mathematics and Physics to digital logic:
-   - Boolean algebra, integer representation and arithmetic,
+   - Boolean algebra; integer representation and arithmetic,
    - physical design of logic components (e.g., logic gates from transistors),
    - use of combinatorial logic components (e.g., Karnaugh maps),
    - use of sequential logic components (e.g., state machines).
 2. From digital logic to computer processors:
-   - processor paradigms: counter, accumulator, and register machines; von Neumann vs. Harvard architecture; RISC vs. CISC,
+   - processor paradigms: counter, accumulator, stack, and register machines; von Neumann vs. Harvard architecture; RISC vs. CISC,
    - memory paradigms: von Neumann bottleneck, memory hierarchy; cache memories,
    - instruction set design: instruction classes; addressing modes; instruction encoding and decoding,
    - processor design: buses; control and data paths; ALU; microcoded vs. hardwired control; fetch-decode-execute cycle.
@@ -37,21 +37,22 @@ Note that
 
 - An associated 
   [GitHub](https://github.com/)-based [repo.](https://github.com/cs-uob/COMS10015)
-  houses the source code for this web-page, plus various other
+  houses the source code for this web-site, plus various other
   resources which might be useful.
-- Although the goal is to provide
-  "[Blackboard](https://www.blackboard.com)-free"
-  access to as much 
-   *static* content 
-  as possible, selected internal-facing
-  *dynamic* content 
-  is only accessible via the associated
-  [Blackboard web-page](https://www.ole.bris.ac.uk):
-  important examples include
-  any unit announcements,
-  the unit forum,
-  and
-  any submission points, marks, and feedback related to assessment.
+- Although this
+  external-facing
+  web-site hosts as much
+   *static* content
+  as possible, the unit cannot and so is not entirely
+  "[Blackboard](https://www.blackboard.com)-free".
+  Selected
+  internal-facing,
+  *dynamic* content
+  is only accessible via other means: important examples include
+
+  1. unit-wide communication, e.g., announcements (Blackboard),
+  2. assessment submission, marks, and feedback   (Blackboard),
+  3. discussion forum                             (Teams).
 
 # Contact Us
 
