@@ -10,6 +10,22 @@
 sudo dnf --assumeyes install epel-release
 sudo dnf config-manager --set-enabled powertools
 sudo dnf --assumeyes update
+
+# software install: anaconda
+sudo wget --quiet --output-document="Anaconda3-2025.06-1-Linux-x86_64.sh" https://repo.anaconda.com/archive/Anaconda3-2025.06-1-Linux-x86_64.sh
+sudo bash ./Anaconda3-2025.06-1-Linux-x86_64.sh -b -f -p /opt/anaconda/3-2025
+sudo rm --force ./Anaconda3-2025.06-1-Linux-x86_64.sh
+
+sudo groupadd anaconda
+sudo usermod --append --groups anaconda vagrant
+
+sudo chown     -R root:anaconda /opt/anaconda
+sudo chmod 770 -R               /opt/anaconda
+
+source /opt/anaconda/3-2025/bin/activate && conda init && source ${HOME}/.bashrc
+
+conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/main
+conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r
         
 # software install: packaged software
 sudo dnf --assumeyes install autoconf
@@ -35,12 +51,9 @@ sudo dnf --assumeyes install wget
 sudo dnf --assumeyes install xauth
 
 # system configuration: group membership
-sudo usermod --append --groups vboxsf  vagrant
-sudo usermod --append --groups dialout vagrant
-sudo usermod --append --groups wheel   vagrant
+sudo usermod --append --groups vboxsf   vagrant
+sudo usermod --append --groups dialout  vagrant
+sudo usermod --append --groups wheel    vagrant
 
 # system configuration: ntp
 sudo systemctl enable --now chronyd
-
-# system configuration: file system structure
-sudo mkdir --parents /opt/software
