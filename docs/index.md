@@ -58,4 +58,6 @@ Note that
 
 - Tom Deakin (Lecturer and Unit Director): [`tom.deakin@bristol.ac.uk`](mailto:tom.deakin@bristol.ac.uk?subject=COMS10015)
 - Daniel Page (Lecturer): [`daniel.page@bristol.ac.uk`](mailto:daniel.page@bristol.ac.uk?subject=COMS10015)
+- John Lapinskas (Lecturer): [`john.lapinskas@bristol.ac.uk`](mailto:john.lapinskas@bristol.ac.uk?subject=COMS10015)
+- Sam Frohlich (Lecturer): [`samantha.frohlich@bristol.ac.uk`](mailto:samantha.frohlich@bristol.ac.uk?subject=COMS10015)
 
