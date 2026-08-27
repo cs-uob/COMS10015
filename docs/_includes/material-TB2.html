@@ -1,2 +1,186 @@
+<p>
 Under construction (we will have a new lecturer and change some of the material compared to last year).
+</p>
 
+<style>
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+.timetable {
+  display: grid;
+  grid-template-columns: 1fr 2fr 4fr;
+  /* border: 1px solid gray; */
+  gap: 1px;
+
+  div {
+    outline: 1px solid;
+    padding: 1ch;
+  }
+
+  .type, .date {
+    background-color: #F1F1F1;
+  }
+  .space {
+    outline: none;
+    grid-column: span 3;
+    min-height: 1ch;
+  }
+  .week {
+    grid-column: span 3;
+    background-color: CCFFFF;
+  }
+  .reading {
+    grid-column: span 3;
+  }
+  .content {
+    background-color: #CCFFCC;
+  }
+  .labcontent {
+    background-color: #FFFFCC;
+  }
+
+  @media (max-width: 700px) {
+    font-size: 0.8rem;
+    grid-template-columns: 1fr;
+    .space, .week, .reading {
+      grid-column: span 1;
+    }
+    .date {
+      display: none;
+    }
+  }
+}
+</style>
+
+<div class="timetable">
+  <div class="week">Week 13, starting 18 Jan 2027</div>
+  <div class="type">Lecture</div>
+  <div class="date">Monday 11am @ St Michael's Hill 31-37 A1.4</div>
+  <div class="content">todo</div>
+  <div class="type">Lecture</div>
+  <div class="date">Tuesday 11am @ Physics G42 Powell</div>
+  <div class="content">todo</div>
+  <div class="type">Lab</div>
+  <div class="date">Thursday 9am - 12pm @ MVB 2.11 + 1.15</div>
+  <div class="labcontent">todo</div>
+  <div class="space"></div>
+
+  <div class="week">Week 14, starting 25 Jan 2027</div>
+  <div class="type">Lecture</div>
+  <div class="date">Monday 11am @ St Michael's Hill 31-37 A1.4</div>
+  <div class="content">todo</div>
+  <div class="type">Lecture</div>
+  <div class="date">Tuesday 11am @ Physics G42 Powell</div>
+  <div class="content">todo</div>
+  <div class="type">Lab</div>
+  <div class="date">Thursday 9am - 12pm @ MVB 2.11 + 1.15</div>
+  <div class="labcontent">todo</div>
+  <div class="space"></div>
+
+  <div class="week">Week 15, starting 1 Feb 2027</div>
+  <div class="type">Lecture</div>
+  <div class="date">Monday 11am @ St Michael's Hill 31-37 A1.4</div>
+  <div class="content">todo</div>
+  <div class="type">Lecture</div>
+  <div class="date">Tuesday 11am @ Physics G42 Powell</div>
+  <div class="content">todo</div>
+  <div class="type">Lab</div>
+  <div class="date">Thursday 9am - 12pm @ MVB 2.11 + 1.15</div>
+  <div class="labcontent">todo</div>
+  <div class="space"></div>
+
+  <div class="week">Week 16, starting 8 Feb 2027</div>
+  <div class="type">Lecture</div>
+  <div class="date">Monday 11am @ St Michael's Hill 31-37 A1.4</div>
+  <div class="content">todo</div>
+  <div class="type">Lecture</div>
+  <div class="date">Tuesday 11am @ Physics G42 Powell</div>
+  <div class="content">todo</div>
+  <div class="type">Lab</div>
+  <div class="date">Thursday 9am - 12pm @ MVB 2.11 + 1.15</div>
+  <div class="labcontent">todo</div>
+  <div class="space"></div>
+  
+  <div class="week">Week 17, starting 15 Feb 2027</div>
+  <div class="type">Lecture</div>
+  <div class="date">Monday 11am @ St Michael's Hill 31-37 A1.4</div>
+  <div class="content">todo</div>
+  <div class="type">Lecture</div>
+  <div class="date">Tuesday 11am @ Physics G42 Powell</div>
+  <div class="content">todo</div>
+  <div class="type">Lab</div>
+  <div class="date">Thursday 9am - 12pm @ MVB 2.11 + 1.15</div>
+  <div class="labcontent">todo</div>
+  <div class="space"></div>
+  
+  <div class="week">Week 18, starting 22 Feb 2027</div>
+  <div class="reading">Reading week - no lectures or labs</div>
+  <div class="space"></div>
+
+  <div class="week">Week 19, starting 1 March 2027</div>
+  <div class="type">Lecture</div>
+  <div class="date">Monday 11am @ St Michael's Hill 31-37 A1.4</div>
+  <div class="content">todo</div>
+  <div class="type">Lecture</div>
+  <div class="date">Tuesday 11am @ Physics G42 Powell</div>
+  <div class="content">todo</div>
+  <div class="type">Lab</div>
+  <div class="date">Thursday 9am - 12pm @ MVB 2.11 + 1.15</div>
+  <div class="labcontent">todo</div>
+  <div class="space"></div>
+
+  <div class="week">Week 20, starting 8 March 2027</div>
+  <div class="type">Lecture</div>
+  <div class="date">Monday 11am @ St Michael's Hill 31-37 A1.4</div>
+  <div class="content">todo</div>
+  <div class="type">Lecture</div>
+  <div class="date">Tuesday 11am @ Physics G42 Powell</div>
+  <div class="content">todo</div>
+  <div class="type">Lab</div>
+  <div class="date">Thursday 9am - 12pm @ MVB 2.11 + 1.15</div>
+  <div class="labcontent">todo</div>
+  <div class="space"></div>
+
+  <div class="week">Week 21, starting 15 March 2027</div>
+  <div class="type">Lecture</div>
+  <div class="date">Monday 11am @ St Michael's Hill 31-37 A1.4</div>
+  <div class="content">todo</div>
+  <div class="type">Lecture</div>
+  <div class="date">Tuesday 11am @ Physics G42 Powell</div>
+  <div class="content">todo</div>
+  <div class="type">Lab</div>
+  <div class="date">Thursday 9am - 12pm @ MVB 2.11 + 1.15</div>
+  <div class="labcontent">todo</div>
+  <div class="space"></div>
+
+  <div class="week">Easter break, 22 March to 9 April</div>
+  <div class="space"></div>
+
+  <div class="week">Week 22, starting 12 April 2027</div>
+  <div class="type">Lecture</div>
+  <div class="date">Monday 11am @ St Michael's Hill 31-37 A1.4</div>
+  <div class="content">todo</div>
+  <div class="type">Lecture</div>
+  <div class="date">Tuesday 11am @ Physics G42 Powell</div>
+  <div class="content">todo</div>
+  <div class="type">Lab</div>
+  <div class="date">Thursday 9am - 12pm @ MVB 2.11 + 1.15</div>
+  <div class="labcontent">todo</div>
+  <div class="space"></div>
+  
+  <div class="week">Week 23, starting 19 April 2027</div>
+  <div class="type">Lecture</div>
+  <div class="date">Monday 11am @ St Michael's Hill 31-37 A1.4</div>
+  <div class="content">todo</div>
+  <div class="type">Lecture</div>
+  <div class="date">Tuesday 11am @ Physics G42 Powell</div>
+  <div class="content">todo</div>
+  <div class="type">Lab</div>
+  <div class="date">Thursday 9am - 12pm @ MVB 2.11 + 1.15</div>
+  <div class="labcontent">todo</div>
+  <div class="space"></div>
+  
+  <div class="week">Week 24, starting 26 April 2027</div>
+  <div class="reading">Revision week - no lectures or labs</div>
+  <div class="space"></div>
+</div>
