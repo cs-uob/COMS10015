@@ -78,6 +78,14 @@ td.assessment {
     background-color: black;
     color: white;
   }
+
+  a {
+    color: lightblue;
+  }
+
+  .page__content :not(pre)>code {
+    background: darkgray;
+  }
 }
 
 /* ========================================================================== */
