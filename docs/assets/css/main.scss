@@ -66,4 +66,18 @@ td.assessment {
   border: 1px solid black; vertical-align: center; horizontal-align: center; text-align: center; background: #ffffcc; 
 }
 
+@media (prefers-color-scheme: dark) {
+  td.blank      { background: darkgray; } 
+  td.lec-1      { background: darkblue; }
+  td.lec-2      { background: darkgreen; }
+  td.lec-3      { background: darkgoldenrod; }
+  td.lab        { background: darkgoldenrod; }
+  td.assessment { background: darkgoldenrod; }
+
+  body {
+    background-color: black;
+    color: white;
+  }
+}
+
 /* ========================================================================== */
