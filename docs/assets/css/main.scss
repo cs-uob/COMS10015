@@ -83,8 +83,12 @@ td.assessment {
     color: lightblue;
   }
 
+  a:hover{
+    color: yellow;
+  }
+
   .page__content :not(pre)>code {
-    background: darkgray;
+    background: darkslategray;
   }
 }
 
