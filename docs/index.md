@@ -4,13 +4,14 @@ permalink: /
 
 # Welcome!
 
-This is the 
-externally accessible 
-web-page for
+This is the externally accessible web-page for
 [COMS10015: Computer Architecture](https://www.bris.ac.uk/unit-programme-catalogue/UnitDetails.jsa?unitCode=COMS10015),
 a unit operated by the 
 [School of Computer Science](https://www.bristol.ac.uk/engineering/schools/computer-science),
 [University of Bristol (UoB)](https://www.bristol.ac.uk).
+
+**This page is being updated for the 2026-27 academic year. Information should be correct by the start of term.**
+
 Quoting the catalogue entry, the remit of this unit can be summarised as follows:
 
 {: .notice--info}
@@ -56,8 +57,11 @@ Note that
 
 # Contact Us
 
-- Tom Deakin (Lecturer and Unit Director): [`tom.deakin@bristol.ac.uk`](mailto:tom.deakin@bristol.ac.uk?subject=COMS10015)
+For questions about the material or exercises, do not contact the lecturers directly, this doesn't scale to ~300 students. Instead, ask your questions in the labs or on the Teams channel.
+
+For other matters, the contact addresses are
+
+- David Bernhard (Lecturer and Unit Director) [`david.bernhard@bristol.ac.uk`](mailto:david.bernhard@bristol.ac.uk?subject=COMS10015)
 - Daniel Page (Lecturer): [`daniel.page@bristol.ac.uk`](mailto:daniel.page@bristol.ac.uk?subject=COMS10015)
-- John Lapinskas (Lecturer): [`john.lapinskas@bristol.ac.uk`](mailto:john.lapinskas@bristol.ac.uk?subject=COMS10015)
 - Sam Frohlich (Lecturer): [`samantha.frohlich@bristol.ac.uk`](mailto:samantha.frohlich@bristol.ac.uk?subject=COMS10015)
 
