@@ -2,7 +2,15 @@
 
 - Read over some sort of
   [tutorial](https://www.google.com/search?q=vagrant+tutorial)
-  material if need be.
+  material if need be: using the VM will be a challenge without at
+  least some background knowledge of the concepts and technologies
+  involved.
+  Keep in mind that after 
+  [deprecation](https://developer.hashicorp.com/hcp/docs/vagrant/hcp-vagrant-eol) 
+  of the HashiCorp Cloud Platform (HCP) Vagrant registry, we moved to a 
+  self-hosted approach to pre-provisioned boxes: this means the workflow 
+  below might differ from some (legacy) instructions you find online, 
+  and, e.g., the VM will not appear on searchable indexes.
 
 - Install various pre-requisites, i.e.,
 
@@ -20,15 +28,16 @@
 
   Note that:
 
-  - using a recent version of VirtualBox is *strongly* recommended:
-    currently this is 6.x, whereas you may get 5.x when using some
-    package managers,
-  - you *may* also need to install an X server in order to support 
+  - Using the most recent version of VirtualBox (currently 7.2) is 
+    strongly recommended: keep in mind that you *may* get another 
+    version when using some package managers, for example, which 
+    may or may not be directly compatible.
+  - You *may* also need to install an X server in order to support 
     forwarded X11 client interfaces: examples include
     [Xming](https://sourceforge.net/projects/xming) or [Cygwin/X](http://x.cygwin.com) for Windows,
     and
     [XQuartz](https://www.xquartz.org) for MacOS,
-  - some features of the VM
+  - Some features of the VM
     (e.g., access to USB devices)
     *may* demand you are a member of the
     [`vboxusers`](https://www.virtualbox.org/manual/ch02.html#install-linux-vboxusers)
@@ -47,7 +56,7 @@
        ```sh
        mkdir ./COMS10015
        cd ./COMS10015
-       wget --quiet https://assets.phoo.org/COMS10015_2025_TB-4/csdsp/vm/vm.tar.gz
+       wget --quiet https://assets.phoo.org/COMS10015_2026_TB-4/csdsp/vm/vm.tar.gz
        tar --gzip --extract --file='vm.tar.gz'
        cd ./vm
        ```
@@ -80,15 +89,14 @@
        cd ./COMS10015
        mkdir ./vm
        cd ./vm
-       vagrant init danpage/COMS10015
+       mkdir ./share
+       vagrant init COMS10015 https://assets.phoo.org/COMS10015_2026_TB-4/csdsp/vm/vm.box
        ```
 
        to 
        generate
        a `Vagrantfile`
-       that references a
-       [pre-provisioned](https://app.vagrantup.com/danpage/boxes/COMS10015)
-       base box,
+       that references a pre-provisioned base box,
 
      - [edit](https://www.vagrantup.com/docs/vagrantfile) 
        the resulting `Vagrantfile` to suit any specific requirements,
