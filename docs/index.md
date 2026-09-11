@@ -11,7 +11,7 @@ This is the website for COMS10015 Computer Architecture, a year 1 unit taught in
   - [Microsoft Teams](https://teams.microsoft.com/l/channel/19%3AFtLWfl0XaUOmKx6gFRiFTy3yLEhP5LwCmB4jtzEhUl81%40thread.tacv2/General?groupId=cc12ca31-e00f-480b-8e17-426f058ab6e6&tenantId=b2e47f30-cd7d-4a4e-a5da-b18cf1a4151b) channels for Computer Architecture, where we make announcements and you can ask questions.
   - [github repository](https://github.com/cs-uob/COMS10015)
   - [Unit catalogue entry](https://www.bris.ac.uk/unit-programme-catalogue/UnitDetails.jsa?unitCode=COMS10015), the official university description of our unit.
-  - [cs-uob.github.io](cs-uob.github.io), our main page with links to different units.
+  - [cs-uob.github.io](https://cs-uob.github.io), our main page with links to different units.
   - [School of Computer Science](https://www.bristol.ac.uk/engineering/schools/computer-science)
   - [University of Bristol (UoB)](https://www.bristol.ac.uk)
 
