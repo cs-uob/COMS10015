@@ -19,7 +19,7 @@ This is the website for COMS10015 Computer Architecture, a year 1 unit taught in
 FKDtnUIlqUZtoKxtp291oPO0olOfnJ5eVUEiVRWfLJAeLz9upzDtnJ4tLFOmMJA0nJ9hVUqcqTttVaImMJM1oPVtnJ4tqTuyVTuyLJEcozph
 -->
 
-There is also a university system called [Blackboard](ole.bris.ac.uk). Based on student feedback, we only use this where necessary such as for assessment submission.
+There is also a university system called [Blackboard](https://ole.bris.ac.uk). Based on student feedback, we only use this where necessary such as for assessment submission.
 
 ## Communication
 
