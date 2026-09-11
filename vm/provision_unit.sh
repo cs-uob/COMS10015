@@ -11,15 +11,15 @@ sudo dnf --assumeyes install java-17-openjdk
 sudo dnf --assumeyes install gtkwave
 sudo dnf --assumeyes install xdg-utils
 
-# software install: packaged software => conda
-conda install --quiet --yes conda-forge/label/cf202003::iverilog
+# software install: iverilog
+wget --quiet --output-document="iverilog-13_0.tar.gz" https://github.com/steveicarus/iverilog/archive/refs/tags/v13_0.tar.gz
+tar --extract --file ./iverilog-13_0.tar.gz
+cd ./iverilog-13_0 
+sh ./autoconf.sh && ./configure --prefix="/opt/iverilog/13.0" && make && sudo make install
+cd ..
+rm --force --recursive ./iverilog-13_0.tar.gz ./iverilog-13_0
 
 # software install: LogisimEvo
-wget --quiet --output-document="logisim-evolution-3.8.0-1.x86_64.rpm" https://github.com/logisim-evolution/logisim-evolution/releases/download/v3.8.0/logisim-evolution-3.8.0-1.x86_64.rpm
-sudo rpm --install --quiet ./logisim-evolution-3.8.0-1.x86_64.rpm
-rm --force ./logisim-evolution-3.8.0-1.x86_64.rpm
-
-# software install: ModuleSim
-wget --quiet --output-document="modulesim-0.4.jar" http://github.com/TeachingTechnologistBeth/ModuleSim/releases/download/0.4/ModuleSim.jar
-sudo install -D --target-directory="/opt/modulesim" ./modulesim-0.4.jar
-rm --force ./modulesim-0.4.jar
+wget --quiet --output-document="logisim-evolution-4.1.0-1.x86_64.rpm" https://github.com/logisim-evolution/logisim-evolution/releases/download/v4.1.0/logisim-evolution-4.1.0-1.x86_64.rpm
+sudo rpm --install --quiet ./logisim-evolution-4.1.0-1.x86_64.rpm
+rm --force ./logisim-evolution-4.1.0-1.x86_64.rpm

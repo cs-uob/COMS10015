@@ -12,16 +12,16 @@ sudo dnf config-manager --set-enabled powertools
 sudo dnf --assumeyes update
 
 # software install: anaconda
-sudo wget --quiet --output-document="Anaconda3-2025.06-1-Linux-x86_64.sh" https://repo.anaconda.com/archive/Anaconda3-2025.06-1-Linux-x86_64.sh
-sudo bash ./Anaconda3-2025.06-1-Linux-x86_64.sh -b -f -p /opt/anaconda/3-2025
-sudo rm --force ./Anaconda3-2025.06-1-Linux-x86_64.sh
+sudo wget --quiet --output-document="Anaconda3-2026.07-1-Linux-x86_64.sh" https://repo.anaconda.com/archive/Anaconda3-2026.07-1-Linux-x86_64.sh
+sudo bash ./Anaconda3-2026.07-1-Linux-x86_64.sh -b -f -p /opt/anaconda/2026
+sudo rm --force ./Anaconda3-2026.07-1-Linux-x86_64.sh
 
 sudo groupadd anaconda && sudo usermod --append --groups anaconda vagrant
 
-sudo chown     -R root:anaconda /opt/anaconda
-sudo chmod 770 -R               /opt/anaconda
+sudo chown     -R root:anaconda /opt/anaconda/2026
+sudo chmod 770 -R               /opt/anaconda/2026
 
-sudo /opt/anaconda/3-2025/bin/conda init --system && source ${HOME}/.bashrc
+sudo /opt/anaconda/2026/bin/conda init --system && source ${HOME}/.bashrc
 conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/main
 conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r
         
